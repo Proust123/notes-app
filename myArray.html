@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD NOTES</title>
+
+    <style>
+
+        *{
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height : 100vh;
+            width : 100%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        .entry_section{
+            height : 50%;
+            width : 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 20px;
+        }
+        .input1{
+            height : 35px;
+            width : 350px;
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            padding-left: 5px;
+        }
+
+        .textArea{
+            margin-top: 20px;
+            border-radius: 5px;
+            font-size: 15px;
+            padding-left: 5px;
+        }
+
+        .btn{
+            height : 50px;
+            width : 50px;
+            border-radius: 5px;
+            background-color: cadetblue;
+            color : white;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .notes{
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .notes_child{
+            height : 300px;
+            width : 350px;
+            border-radius: 5px;
+            background-color: white;
+            margin : 10px
+        }
+        .notes_heading{
+            border-radius: 10px 10px 0px 0px;
+            background-color: aqua;
+        }
+        .notes_detail{
+            border-radius: 0px 0px 10px 10px;
+            background-color: springgreen;
+            height : 250px
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <section class = "main">
+        <div class = "entry_section">
+            <h1 class = "heading">ADD NOTES</h1>
+            <input type="text" class = "input1" placeholder="Notes">
+            <textarea name="" class = "textArea" cols="70" rows="15" placeholder="Details"></textarea>
+            <button class = "btn" onclick = "addNotes()">Add</button>
+        </div>
+        <hr>
+        <div class = "notes"></div>
+    </section>
+    
+    <!-- <script src="./myArray.js"></script> -->
+    <script src="./script.js"></script>
+
+</body>
+</html>
